@@ -29,7 +29,7 @@ public class StreamStudy {
         List<String> words = Arrays.asList(contents.split("[\\P{L}]+"));
 
         // TODO 이 부분에 구현한다.
-        words.stream().filter(word->word.length() > 12).distinct().map(w->w.toLowerCase()).sorted((a,b)->b.length() - a.length()).forEach(s-> System.out.println(s));
+        words.stream().filter(word->word.length() > 12).distinct().sorted((a,b)->b.length() - a.length()).limit(100).map(w->w.toLowerCase()).forEach(s-> System.out.println(s));
     }
 
     public static List<Integer> doubleNumbers(List<Integer> numbers) {
