@@ -8,7 +8,7 @@ import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException
 
 public class ExpressionTest {
     @Test
-    public void of() {
+    public void of()  {
         assertThat(Expression.PLUS == Expression.of("+")).isTrue();
     }
 
